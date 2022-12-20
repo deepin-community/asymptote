@@ -1,0 +1,99 @@
+Source: asymptote
+Maintainer: Debian TeX Task Force <debian-tex-maint@lists.debian.org>
+Uploaders: Hubert Chathi <uhoreg@debian.org>,
+           Ruben Molina <rmolina@udea.edu.co>,
+           Picca Frédéric-Emmanuel <picca@debian.org>,
+           Norbert Preining <norbert@preining.info>,
+           Hilmar Preusse <hille42@web.de>
+Section: tex
+Priority: optional
+Build-Depends: bison,
+               debhelper-compat (= 13),
+               dh-python,
+               dpkg-dev (>= 1.16.1),
+               flex,
+               freeglut3-dev,
+               libosmesa6-dev,
+               ghostscript,
+               imagemagick,
+               libfftw3-dev,
+               libgc-dev,
+               libgsl-dev,
+               libncurses-dev,
+               libreadline-dev,
+               libsigsegv-dev,
+               libtimedate-perl,
+               python3,
+               tex-common,
+               texinfo,
+               texlive-latex-base,
+               texlive-latex-extra,
+               texlive-latex-recommended,
+               texlive-fonts-recommended,
+               texlive-pstricks,
+               zlib1g-dev,
+               libglm-dev,
+               libglew-dev
+Standards-Version: 4.5.0
+Rules-Requires-Root: no
+Homepage: http://asymptote.sourceforge.net/
+Vcs-Git: https://github.com/debian-tex/asymptote.git
+Vcs-Browser: https://github.com/debian-tex/asymptote
+
+Package: asymptote
+Architecture: any
+Depends: ${misc:Depends},
+         ${python3:Depends},
+         ${shlibs:Depends},
+         ghostscript,
+         imagemagick,
+         install-info,
+         texlive-binaries,
+         texlive-latex-base,
+         texlive-pstricks,
+         texlive-plain-generic,
+         xdg-utils
+Suggests: asymptote-x11
+Recommends: asymptote-doc
+Description: script-based vector graphics language inspired by MetaPost
+ Asymptote is a powerful script-based vector graphics language for technical
+ drawings, inspired by MetaPost but with an improved C++-like syntax.
+ Asymptote provides for figures the same high-quality level of typesetting that
+ LaTeX does for scientific text.
+
+Package: asymptote-x11
+Architecture: all
+Depends: ${misc:Depends},
+         ${python3:Depends},
+         asymptote (>= ${binary:Version}),
+         librsvg2-bin,
+         python3-cson,
+         python3-numpy,
+         python3-pyqt5,
+         python3-pyqt5.qtsvg
+Suggests: gv,
+          evince-gtk | pdf-viewer
+Conflicts: asymptote (<= 2.49-2)
+Replaces: asymptote (<= 2.49-2)
+Description: script-based vector graphics language inspired by MetaPost - the GUI part
+ Asymptote is a powerful script-based vector graphics language for technical
+ drawings, inspired by MetaPost but with an improved C++-like syntax.
+ Asymptote provides for figures the same high-quality level of typesetting that
+ LaTeX does for scientific text.
+ .
+ In the event that adjustments to the final figure are required, the
+ preliminary Graphical User Interface (GUI) xasy included with Asymptote allows
+ you to move graphical objects and draw new ones. The modified figure can then
+ be saved as a normal Asymptote file.
+
+Package: asymptote-doc
+Architecture: all
+Multi-Arch: foreign
+Section: doc
+Depends: ${misc:Depends}
+Recommends: asymptote,
+            info-browser | pdf-viewer | www-browser
+Description: documentation and examples for asymptote
+ Asymptote is a powerful descriptive vector graphics language that
+ provides a natural coordinate-based framework for technical drawing.
+ This package provides documentation and examples.

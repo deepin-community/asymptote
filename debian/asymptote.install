@@ -1,0 +1,13 @@
+usr/bin/asy
+usr/share/texmf/
+usr/share/asymptote/*.asy
+usr/share/asymptote/*.sh
+usr/share/asymptote/*.py
+usr/share/asymptote/*.ps
+usr/share/asymptote/*.js
+usr/share/asymptote/*.el	/usr/share/emacs/site-lisp/
+usr/share/asymptote/shaders/*.glsl
+usr/share/asymptote/webgl/
+usr/share/asymptote/asy_filetype.vim /usr/share/vim/addons/ftdetect/
+usr/share/asymptote/asy.vim /usr/share/vim/addons/syntax/
+./debian/asymptote.yaml /usr/share/vim/registry/

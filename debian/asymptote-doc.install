@@ -1,0 +1,4 @@
+./doc/png/*.html		/usr/share/doc/asymptote/html/
+./doc/png/*.png			/usr/share/doc/asymptote/html/
+./doc/FAQ/asy-faq.html/*.html	/usr/share/doc/asymptote/faq/
+usr/share/doc/asymptote/examples

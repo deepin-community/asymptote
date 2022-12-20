@@ -1,0 +1,866 @@
+asymptote (2.70+ds-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Fri, 11 Nov 2022 17:55:50 +0800
+
+asymptote (2.70+ds-2) unstable; urgency=medium
+
+  * Export ASYMPTOTE_HOME in Debian autopkgtest, instead of patching
+    upstreams test suite.
+  * Add build-essential to Depends fields of the test suite.
+
+ -- Hilmar Preusse <hille42@web.de>  Fri, 18 Jun 2021 10:35:16 +0200
+
+asymptote (2.70+ds-1) unstable; urgency=medium
+
+  * New upstream release, refresh patches, disable obsolete patch.
+  * Lintian clean (local charset) + overrides.
+  * asy-x11 is arch: all.
+  * Use test suite (provided by upstream) for autopkgtest.
+
+ -- Hilmar Preusse <hille42@web.de>  Thu, 17 Jun 2021 23:37:19 +0200
+
+asymptote (2.69+ds-1) unstable; urgency=medium
+
+  * New upstream release, do some lintian cleanup.
+
+ -- Hilmar Preusse <hille42@web.de>  Wed, 24 Feb 2021 09:33:52 +0100
+
+asymptote (2.68-2) unstable; urgency=medium
+
+  * Link docs to /u/s/texmf/doc so that texdoc finds them (Closes: #977147)
+  * Use dh compat 13, remove dh_missing override
+
+ -- Norbert Preining <norbert@preining.info>  Sat, 12 Dec 2020 17:59:10 +0900
+
+asymptote (2.68-1) unstable; urgency=medium
+
+  * New upstream version 2.68
+  * Update patches, remove gs 9.53 specific patches, fixed differently by
+    upstream
+
+ -- Norbert Preining <norbert@preining.info>  Thu, 26 Nov 2020 13:21:38 +0900
+
+asymptote (2.67-2) unstable; urgency=medium
+
+  * Apply patch from https://github.com/vectorgraphics/asymptote/pull/181
+    to solve issues with gs 9.53.x. I assume this to be a work around
+    until ghostscript has been fixed. (Closes: #971846)
+
+ -- Hilmar Preusse <hille42@web.de>  Tue, 20 Oct 2020 23:56:57 +0200
+
+asymptote (2.67-1) unstable; urgency=medium
+
+  * New upstream version 2.67
+  * update patches
+  * clean up clean target in d/rules, by creating d/clean
+
+ -- Hilmar Preusse <hille42@web.de>  Tue, 11 Aug 2020 00:22:30 +0200
+
+asymptote (2.66-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit (from ./configure),
+    Repository.
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Norbert Preining ]
+  * New upstream version 2.66
+  * update patches
+
+ -- Norbert Preining <norbert@preining.info>  Thu, 09 Jul 2020 09:35:27 +0900
+
+asymptote (2.65-2) unstable; urgency=medium
+
+  * fix doc-base specification for new location of doc files
+
+ -- Norbert Preining <norbert@preining.info>  Mon, 30 Mar 2020 18:28:17 +0900
+
+asymptote (2.65-1) unstable; urgency=medium
+
+  * New upstream version 2.65
+  * update typos patch
+  * switch to dh 12, cleanup install process
+
+ -- Norbert Preining <norbert@preining.info>  Mon, 30 Mar 2020 11:16:34 +0900
+
+asymptote (2.64-1) unstable; urgency=medium
+
+  * New upstream version 2.64
+  * update patches
+
+ -- Norbert Preining <norbert@preining.info>  Thu, 05 Mar 2020 17:00:23 +0900
+
+asymptote (2.62-1) unstable; urgency=medium
+
+  * New upstream version 2.62
+  * update patches
+
+ -- Norbert Preining <norbert@preining.info>  Mon, 10 Feb 2020 23:52:53 +0900
+
+asymptote (2.61-1) unstable; urgency=medium
+
+  * New upstream version 2.61
+  * Improve grffile removal (also from generated files) (Closes: #945118)
+
+ -- Norbert Preining <norbert@preining.info>  Tue, 19 Nov 2019 17:35:06 +0900
+
+asymptote (2.60-2) unstable; urgency=medium
+
+  * Do not load grffile (Closes: #944916)
+
+ -- Norbert Preining <norbert@preining.info>  Mon, 18 Nov 2019 09:55:26 +0900
+
+asymptote (2.60-1) unstable; urgency=medium
+
+  * New upstream version 2.60
+  * adjust typo patch
+
+ -- Norbert Preining <norbert@preining.info>  Thu, 07 Nov 2019 09:57:06 +0900
+
+asymptote (2.59-1) unstable; urgency=medium
+
+  * rework vim integration according to Francesco Poli (Closes: #942224)
+  * New upstream version 2.59
+  * update patches
+
+ -- Norbert Preining <norbert@preining.info>  Mon, 21 Oct 2019 16:46:46 +0900
+
+asymptote (2.58-1) unstable; urgency=medium
+
+  * New upstream version 2.58
+  * update patches
+
+ -- Norbert Preining <norbert@preining.info>  Sat, 12 Oct 2019 23:27:56 +0900
+
+asymptote (2.57-1) unstable; urgency=medium
+
+  * New upstream version 2.57
+  * update patches for new release
+
+ -- Norbert Preining <norbert@preining.info>  Thu, 10 Oct 2019 19:07:44 +0900
+
+asymptote (2.53-1) unstable; urgency=medium
+
+  * New upstream version.
+  * Remove BD on pyqt5-dev-tools, document it in README.source.
+  * Some parts from typos.diff moved to upstream.
+  * New lintian override:
+    E: asymptote source: source-is-missing webgl/arcball-min-0.01.js.
+
+ -- Hilmar Preusse <hille42@web.de>  Fri, 23 Aug 2019 07:11:20 +0200
+
+asymptote (2.51-1) unstable; urgency=medium
+
+  * New upstream version.
+  * Add BD: pyqt5-dev-tools to convert Qt Resource File (.qrc)
+    into Python modules.
+  * dyn_link_GLEW.patch: ...we still link dynamically w/ libglew2.1.
+  * Change BD: libncurses5-dev -> libncurses-dev.
+
+ -- Hilmar Preusse <hille42@web.de>  Thu, 08 Aug 2019 13:15:18 +0200
+
+asymptote (2.49-3) unstable; urgency=medium
+
+  * Split graphical UI into a new package to provide small asymptote
+    CLI package (Closes: #923369).
+  * Bump Standards Version to 4.4.0, no changes needed.
+
+ -- Hilmar Preusse <hille42@web.de>  Sun, 28 Jul 2019 17:00:00 +0200
+
+asymptote (2.49-2) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Norbert Preining <norbert@preining.info>  Wed, 10 Jul 2019 17:33:16 +0900
+
+asymptote (2.49-1) experimental; urgency=medium
+
+  * New upstream version 2.49
+  * update patches
+
+ -- Norbert Preining <norbert@preining.info>  Tue, 23 Apr 2019 20:00:50 +0900
+
+asymptote (2.48-1) experimental; urgency=medium
+
+  * New upstream release, drop patch
+    d98f3793c4df96dcae238312aac889502912872d.diff
+  * Add libglm-dev, libglew-dev to B-D, they are needed for building.
+  * Add lintian override "asymptote source: source-is-missing" for js files.
+
+ -- Hilmar Preuße <hille42@web.de>  Tue, 02 Apr 2019 11:05:35 +0200
+
+asymptote (2.47-2) unstable; urgency=medium
+
+  [ Hilmar Preuße ]
+  * Upstream patch d98f3793c4df96dcae238312aac889502912872d.diff
+    to implement workaround for Ghostscript transparency extension
+    -dSAFER bug (Closes: #912627).
+
+  [ Norbert Preining ]
+  * update my email and VCS fields
+
+ -- Norbert Preining <norbert@preining.info>  Mon, 28 Jan 2019 13:58:38 +0900
+
+asymptote (2.47-1) unstable; urgency=medium
+
+  * New upstream version 2.47
+  * update patches
+  * add b-d on libtimedate-perl (Closes: #912090)
+  * bump standards version, no changes necessary
+  * install examples and necessary xasy files
+
+ -- Norbert Preining <preining@debian.org>  Mon, 05 Nov 2018 11:41:02 +0900
+
+asymptote (2.44-1) unstable; urgency=medium
+
+  * New upstream version 2.44
+  * update patches
+
+ -- Norbert Preining <preining@debian.org>  Thu, 12 Apr 2018 21:55:20 +0900
+
+asymptote (2.43-1) unstable; urgency=medium
+
+  * New upstream version 2.43
+  * update patches
+
+ -- Norbert Preining <preining@debian.org>  Fri, 06 Apr 2018 14:17:59 +0900
+
+asymptote (2.42-1) unstable; urgency=medium
+
+  * New upstream version 2.42
+    - improved diagnostics (Closes: #890294)
+  * update/cleanup patches
+  * bump standards version, no changes necessary
+
+ -- Norbert Preining <preining@debian.org>  Wed, 04 Apr 2018 10:02:23 +0900
+
+asymptote (2.41-4) unstable; urgency=medium
+
+  [ Nicolas Boulenguez ]
+  * Use HTTPS instead of HTTP for Vcs-Browser URL.
+  * Use dpkg-dev snippet to parse changelog instead of hand-written recipes.
+  * In copyright file, move default pattern to top.
+  * Use HTTPS instead of HTTP for copyright format URL.
+  * Fix typo detected by lintian (hexidecimal).
+  * Pass build flags to upstream build system.
+  * Switch to debhelper 10.
+  * Avoid unneeded library dependencies.
+  * Enable all hardening build flags.
+  * Provide ASYMPTOTE_HOME, avoiding lots of warning when HOME is unset.
+  * Fix more incompatibilities with python3.
+  * Use dh-python helper.
+  * Allow -doc package to satisfy Multi-Arch foreign dependencies.
+  * Remove Replaces dependency between main and -doc package.
+  * Switch to python3 interpreter.
+  (Closes: #880422) (Big thanks to Nicolas for his excellent work!)
+
+  [ Norbert Preining ]
+  * make xasy relative symlinks, otherwise dh_python3 breaks
+
+ -- Norbert Preining <preining@debian.org>  Sun, 05 Nov 2017 21:32:47 +0900
+
+asymptote (2.41-3) unstable; urgency=medium
+
+  * add tl-plain-generic to dependencies (Closes: #861883)
+  * bump standards version, no changes necessary
+
+ -- Norbert Preining <preining@debian.org>  Tue, 31 Oct 2017 08:55:45 +0900
+
+asymptote (2.41-2) unstable; urgency=medium
+
+  * upload to unstable
+
+ -- Norbert Preining <preining@debian.org>  Mon, 19 Jun 2017 16:29:22 +0900
+
+asymptote (2.41-1) experimental; urgency=medium
+
+  * New upstream version 2.41
+
+ -- Norbert Preining <preining@debian.org>  Tue, 13 Jun 2017 09:46:42 +0900
+
+asymptote (2.38-2) unstable; urgency=medium
+
+  * include upstream fix to work with TL2016 (Closes: #836252)
+
+ -- Norbert Preining <preining@debian.org>  Thu, 01 Sep 2016 17:33:03 +0900
+
+asymptote (2.38-1) unstable; urgency=medium
+
+  [ Alexis Bienvenüe ]
+  * Honour SOURCE_DATE_EPOCH, to make the build reproducible. (Closes: #823824)
+
+  [ Norbert Preining ]
+  * Imported Upstream version 2.38
+  * bump standards version, no changes necessary
+
+ -- Norbert Preining <preining@debian.org>  Sat, 14 May 2016 08:57:02 +0900
+
+asymptote (2.37.real-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.37.real - the previous 2.37 was only
+    a temporary git tag, this is now the released version
+  * update patches to real 2.37 release
+  * bump standards version, no changes necessary
+
+ -- Norbert Preining <preining@debian.org>  Tue, 15 Mar 2016 11:44:27 +0900
+
+asymptote (2.37-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.37
+  * Building on mips hopefully finally fixed - GCC bug (Closes: #808821)
+    Big thanks to Julian Gilbey for tracking this down together with
+    upstream!!!
+  * update patches for new release
+  * add dh-autoreconf to build-deps, and run autoreconf as configure
+    is not shipped in the source tarball
+
+ -- Norbert Preining <preining@debian.org>  Thu, 04 Feb 2016 15:38:06 +0900
+
+asymptote (2.35-4) unstable; urgency=medium
+
+  * fix ftbfs on mips with upstream git change (Closes: #808821)
+
+ -- Norbert Preining <preining@debian.org>  Wed, 27 Jan 2016 19:37:13 +0900
+
+asymptote (2.35-3) unstable; urgency=medium
+
+  * switch to libgsl-dev for build-deps
+  * add upstream patch to support gsl2 (Closes: #805749)
+
+ -- Norbert Preining <preining@debian.org>  Tue, 24 Nov 2015 15:14:40 +0900
+
+asymptote (2.35-2) unstable; urgency=medium
+
+  * switch back to new gs support now that gs is updated (Closes: #797098)
+
+ -- Norbert Preining <preining@debian.org>  Fri, 28 Aug 2015 09:25:00 +0900
+
+asymptote (2.35-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.35
+  * unfuzzify patches
+  * switch packaging to dh instead of cdbs
+  * fix gs device problems due to gs being too old (in Debian)
+
+ -- Norbert Preining <preining@debian.org>  Thu, 25 Jun 2015 15:22:52 +0900
+
+asymptote (2.31-2) unstable; urgency=medium
+
+  * fix missing backslash quote in asy-mode.el (Closes: #756188)
+  * bump standards version, no changes necessary
+
+ -- Norbert Preining <preining@debian.org>  Tue, 21 Oct 2014 08:54:26 +0900
+
+asymptote (2.31-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.31
+
+ -- Norbert Preining <preining@debian.org>  Mon, 19 May 2014 08:54:04 +0900
+
+asymptote (2.30-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.30
+
+ -- Norbert Preining <preining@debian.org>  Sat, 17 May 2014 13:01:11 +0900
+
+asymptote (2.29-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.29
+  * add libosmesa6-dev for off-screen rendering to build-deps
+
+ -- Norbert Preining <preining@debian.org>  Fri, 16 May 2014 23:20:31 +0900
+
+asymptote (2.28-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.28
+  * unfuzzify patches
+
+ -- Norbert Preining <preining@debian.org>  Wed, 14 May 2014 18:19:39 +0900
+
+asymptote (2.23-2) unstable; urgency=medium
+
+  * add texlive-fonts-recommended (new location of ec) (Closes: #737256)
+
+ -- Norbert Preining <preining@debian.org>  Mon, 03 Feb 2014 11:12:43 +0900
+
+asymptote (2.23-1) unstable; urgency=low
+
+  [ Picca Frédéric-Emmanuel ]
+  * Imported Upstream version 2.21
+  * debian/control
+    - Bump Standards-Version to 3.9.4 (no changes)
+    - Add VCS-x fields since the packaging is hosted under
+      collab-maint.
+    - Remove useless version dependencies on libgc-dev thanks to cme
+    - Replace dpkg (>= 1.15.4) | install-info by install-info
+      now that the minimum version of dpkg is available everywhere.
+  * debian/patches
+    - 0001-use-pdf-instead-of-acroread.path (deleted)
+    - 0001-use-xdg-utils-instead-of-acroread.path (new)
+      you can use your default pdf-viewer instead of xpdf to open
+      the generated pdf.
+    - 0003-clarify-ref-card-license.patch (deleted - applyed upstream)
+  * Add the doc sources into the asymptote-doc package (Closes: #607708)
+
+  [ Norbert Preining ]
+  * Imported upstream version 2.23
+    - remove files that are regenerated during build and removed
+  * debian/control
+    - Bump Standards-Version to 3.9.5 (no changes)
+    - switch dependencies to python-pil et al.
+  * debian/rules
+    - add get-orig-source target that removes generated files
+  * fix location of image files in asymptote.info
+  * link documentation into /usr/share/texmf/doc (since tex-common 4)
+  * switch maintainership to Debian TeX maintainers team, move Hubert
+    from Maintainer to Uploaders
+    (with permission by the current maintainer and the uploaders)
+  * dpkg-reconfigure now works (Closes: #617619)
+
+ -- Norbert Preining <preining@debian.org>  Tue, 12 Nov 2013 14:31:32 +0900
+
+asymptote (2.15-2) unstable; urgency=low
+
+  * Clarify license for reference card. (Closes: #684417)
+
+ -- Hubert Chathi <uhoreg@debian.org>  Fri, 10 Aug 2012 15:49:01 -0400
+
+asymptote (2.15-1) unstable; urgency=low
+
+  * Imported Upstream version 2.15
+  * debian/copyright updated and fixed using config-edit
+  * debian/patches
+    - 0001-feature-fix-FTBFS-on-mips.patch (deleted - applyed upstream)
+    - 0004-feature-fix-FTBFS-on-hurd.patch (deleted - applyed upstream)
+
+ -- Picca Frédéric-Emmanuel <picca@debian.org>  Fri, 18 Nov 2011 21:39:01 +0100
+
+asymptote (2.13-2) unstable; urgency=low
+
+  * debian/control
+    - move the Build-Depends-Indep into the Build-Depends to
+      fix the FTBFS (Closes: #634202)
+  * debian/patches
+    - 0004-feature-fix-FTBFS-on-hurd.patch (new)
+
+ -- Picca Frédéric-Emmanuel <picca@debian.org>  Mon, 18 Jul 2011 22:17:05 +0200
+
+asymptote (2.13-1) unstable; urgency=low
+
+  * Imported Upstream version 2.13
+    - (Closes: #607341, #627125, #481910, #564862, #553973)
+  * switch to source format 3.0 (quilt)
+    - refresh the patch series
+  * Add myself as uploader.
+  * remove the asymptote-doc exemple symlink (Closes: #589124)
+  * debian/control
+    - Bump Standards-Version to 3.9.2 (no changes)
+    - Switch to compat 8
+  * Updating debian/copyright (Closes: #586798)
+  * Updating debian/rules (remove deprecated options)
+
+ -- Picca Frédéric-Emmanuel <picca@debian.org>  Sat, 02 Jul 2011 23:42:26 +0200
+
+asymptote (2.02-2) unstable; urgency=low
+
+  * Fix debian/rules to not fail when building arch-only
+    packages. (Closes: #589062)
+
+ -- Hubert Chathi <uhoreg@debian.org>  Thu, 15 Jul 2010 12:37:46 -0400
+
+asymptote (2.02-1) unstable; urgency=low
+
+  * New Upstream Version
+  * Add texlive-latex-recommended and texlive-latex-extra to Build-Depends.
+
+ -- Hubert Chathi <uhoreg@debian.org>  Tue, 13 Jul 2010 11:56:32 -0400
+
+asymptote (1.99-1) unstable; urgency=low
+
+  * New upstream version
+  * Reworking debian/rules
+  * Adding autotools-dev to Build-Depends so config.* can be updated.
+  * Adding dpkg (>= 1.15.4) | install-info to Depends, as recommended by
+    Policy 12.2 (It's needed for the transition to triggerized install-info)
+  * Patching prc/PRCdouble.h to solve a FTBFS in hppa (Closes: ##561423)
+  * Updating Copyright on debian/*
+
+ -- Ruben Molina <rmolina@udea.edu.co>  Sun, 20 Jun 2010 21:30:54 -0500
+
+asymptote (1.90-1) unstable; urgency=low
+
+  * New upstream version
+  * Fix @direntry at doc/asymptote.texi (Closes: #559943)
+
+ -- Ruben Molina <rmolina@udea.edu.co>  Tue, 08 Dec 2009 11:31:30 -0500
+
+asymptote (1.88-2) unstable; urgency=low
+
+  * Restoring direct patches accidentally reverted
+  * Symlinking asymptote.pdf to texmf directory (Closes: #551482)
+  * Adding texlive-plain-extra to Recommends (Closes: #538168)
+
+ -- Ruben Molina <rmolina@udea.edu.co>  Mon, 26 Oct 2009 21:14:36 -0500
+
+asymptote (1.88-1) unstable; urgency=low
+
+  * New upstream version
+  * Updating debian/watch (was missing current versions)
+  * Updating doc/makefile.in patch (previous one was over-enthusiastic)
+  * Improving relationships for asymptote-doc (Conflict is unneeded and
+    probably in violation of policy 2.5)
+  * Improving debian/rules
+    + Fix installing of examples (Closes: #550306, #552103), thanks to
+      Julian Gilbey!
+    + Remove Makefile and info files installed in html/ (Julian Gilbey)
+    + Cleaning unnecesary/commented lines
+    + Remove .cvsignore files
+  * Moved symlinks to docs from asymptote to asymptote-doc, adding a new
+    symlink to the recently moved examples/ (Closes: #551483)
+  * Updating Build-Depends: libreadline5-dev -> libreadline-dev
+
+ -- Ruben Molina <rmolina@udea.edu.co>  Sat, 24 Oct 2009 01:11:11 -0500
+
+asymptote (1.86-1) unstable; urgency=low
+
+  * Add myself to uploaders.
+  * New upstream version.
+  * Bump Standards-Version to 3.8.3 (no changes)
+  * Bump versioned Build-Depends on debhelper to >= 5, and set
+    debian/compat to 5 (package-uses-deprecated-debhelper-compat-version 4)
+  * Add a clean rule to solve a FTBFS building twice in a row
+    (qa-doublebuild).
+  * Patch doc/Makefile.in fixing issues in asy.1 generation
+    (hyphen-used-as-minus-sign)
+  * Patch doc/FAQ/asy-faq.bfnn adding INFO-DIR-SECTION to info document
+    (info-document-missing-dir-section)
+  * Update symptote-doc descriptions (duplicate-short-description and
+    duplicate-long-description)
+  * Set doc-base Section to Science/Mathematics (doc-base-unknown-section)
+  * Set executable bit on asy-kate.sh in binary-predeb rule
+    (script-not-executable)
+  * Move examples from asymptote to asymptote-doc in binary-install rule
+    (arch-dep-package-has-big-usr-share)
+
+ -- Ruben Molina <rmolina@udea.edu.co>  Thu, 24 Sep 2009 17:26:41 -0500
+
+asymptote (1.80-1) unstable; urgency=low
+
+  * New upstream version.
+  * Call dh_installtex instead of calling texhash directly. (closes: #529452)
+  * Remove obsolete upgrade code.
+
+ -- Hubert Chathi <uhoreg@debian.org>  Wed, 08 Jul 2009 22:57:02 -0400
+
+asymptote (1.70-2) unstable; urgency=low
+
+  * Upload to unstable.
+  * Don't use absolute path when calling texhash in maintainer scripts.
+  * Fix build-depends on libgc-dev.
+
+ -- Hubert Chathi <uhoreg@debian.org>  Thu, 30 Apr 2009 21:38:48 -0400
+
+asymptote (1.70-1) experimental; urgency=low
+
+  * New upstream version.
+
+ -- Hubert Chathi <uhoreg@debian.org>  Tue, 21 Apr 2009 01:07:28 -0400
+
+asymptote (1.66-1) experimental; urgency=low
+
+  * New upstream version. (closes: #505549)
+
+ -- Hubert Chathi <uhoreg@debian.org>  Thu, 26 Feb 2009 23:27:16 -0500
+
+asymptote (1.51-1) experimental; urgency=low
+
+  * New upstream version. (closes: #505549)
+  * Fix up depends/build-depends.
+
+ -- Hubert Chathi <uhoreg@debian.org>  Fri, 14 Nov 2008 23:48:41 -0500
+
+asymptote (1.43-1) unstable; urgency=low
+
+  * New upstream version. (closes: #488141)
+
+ -- Hubert Chathi <uhoreg@debian.org>  Thu, 26 Jun 2008 15:55:42 -0400
+
+asymptote (1.42-2) unstable; urgency=low
+
+  * Add pointer to animate.sty in README.Debian for animated PDFs.
+    (closes: 460282)
+
+ -- Hubert Chathi <uhoreg@debian.org>  Wed, 11 Jun 2008 12:22:03 -0400
+
+asymptote (1.42-1) unstable; urgency=low
+
+  * New upstream version
+  * debian/control: Add Depends: python-imaging-tk. (closes: #469149)
+
+ -- Hubert Chathi <uhoreg@debian.org>  Tue, 01 Apr 2008 11:22:31 -0400
+
+asymptote (1.40-1) unstable; urgency=low
+
+  * New upstream release.
+    * More fixes for GCC 4.3. (closes: #455424)
+  * debian/control: Build-Depend on libfftw3-dev instead of fftw3-dev.
+    (closes: #457945)
+  * debian/control: Use Homepage field.
+  * debian/control: Bumped Standards-Version to 3.7.3.
+  * debian/copyright: License changed to GPL 3 or later.
+  * debian/copyright: Use proposed machine-readable copyright format.
+
+ -- Hubert Chathi <uhoreg@debian.org>  Mon,  7 Jan 2008 21:35:34 -0500
+
+asymptote (1.37-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Hubert Chathi <uhoreg@debian.org>  Tue, 11 Dec 2007 21:57:48 -0500
+
+asymptote (1.33-1) unstable; urgency=low
+
+  * New upstream release. (closes: #431334)
+
+ -- Hubert Chan <uhoreg@debian.org>  Wed, 12 Sep 2007 18:52:29 -0400
+
+asymptote (1.29-1) unstable; urgency=low
+
+  * New upstream release. (closes: #425988)
+    * Add missing #include for GCC 4.3. (closes: #421207)
+  * Fix building on mips.
+  * Make texlive the default dependency, since tetex is obsolete.
+
+ -- Hubert Chan <uhoreg@debian.org>  Sun, 27 May 2007 15:50:59 -0400
+
+asymptote (1.23-1) unstable; urgency=low
+
+  * New upstream release.
+  * Only Recommends: asymptote-doc (instead of Depends:), since we now
+    print a proper warning if the documentation is not installed.
+  * Fix Recommends: for asymptote-doc.
+
+ -- Hubert Chan <uhoreg@debian.org>  Mon, 12 Mar 2007 17:36:40 -0400
+
+asymptote (1.21-1) unstable; urgency=low
+
+  * New upstream release.
+  * Remove obsolete dependencies. (closes: #402803)
+
+ -- Hubert Chan <uhoreg@debian.org>  Wed, 21 Feb 2007 13:21:42 -0500
+
+asymptote (1.18-3) unstable; urgency=low
+
+  * Add Replaces:, so that upgrades work properly. (closes: #402625)
+
+ -- Hubert Chan <uhoreg@debian.org>  Mon, 11 Dec 2006 16:13:23 -0500
+
+asymptote (1.18-2) unstable; urgency=low
+
+  * Properly install all the info files.
+  * Install FAQ (info and ascii format).
+
+ -- Hubert Chan <uhoreg@debian.org>  Wed,  6 Dec 2006 00:30:58 -0500
+
+asymptote (1.18-1) unstable; urgency=low
+
+  * New upstream release.
+  * Add watch file.
+  * Move documentation to asymptote-doc package (so maybe it'll take less
+    than 13 hours to build on m68k).  (But we still depend on
+    asymptote-doc, since asy has a help command that depends on it.)
+
+ -- Hubert Chan <uhoreg@debian.org>  Thu, 23 Nov 2006 00:37:18 -0500
+
+asymptote (1.14-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update maintainer address.
+
+ -- Hubert Chan <uhoreg@debian.org>  Wed, 18 Oct 2006 15:22:02 -0400
+
+asymptote (1.13-1) unstable; urgency=low
+
+  * Sponsor note: upload to Debian by Yann Dirson <dirson@debian.org>.
+
+  * New upstream release.
+  * Update dependencies to support texlive (closes: #381465).
+
+ -- Hubert Chan <hubert@uhoreg.ca>  Tue, 19 Sep 2006 13:45:57 -0400
+
+asymptote (1.11-1) unstable; urgency=low
+
+  * New upstream release.
+  * Build-depend on libsigsegv-dev as per upstream's suggestion.
+
+ -- Hubert Chan <hubert@uhoreg.ca>  Wed, 12 Jul 2006 16:37:13 -0400
+
+asymptote (1.10-1) unstable; urgency=low
+
+  * New upstream release.
+    - supports $(DESTDIR) now, so we can drop the extra make flags
+  * Bumped standards version to 3.7.2. (no changes)
+  * Add info to copyright file.
+  * Build-depend on libgsl0-dev.
+
+ -- Hubert Chan <hubert@uhoreg.ca>  Thu, 29 Jun 2006 21:56:14 -0400
+
+asymptote (1.03-1) unstable; urgency=low
+
+  * Sponsor note: upload to Debian by Yann Dirson <dirson@debian.org>.
+
+  * New upstream release.
+    * Support compilation under GCC 4.1 (closes: #357382).
+
+ -- Hubert Chan <hubert@uhoreg.ca>  Thu, 30 Mar 2006 21:55:05 -0700
+
+asymptote (1.02-2) unstable; urgency=low
+
+  * Sponsor note: upload to Debian by Yann Dirson <dirson@debian.org>.
+
+  * Change default PDF reader to xpdf instead of acroread.
+
+ -- Hubert Chan <hubert@uhoreg.ca>  Tue, 14 Mar 2006 21:35:28 -0700
+
+asymptote (1.02-1) unstable; urgency=low
+
+  * New upstream release.
+  * Fix the copyright file (use "Copyright Holder" and "License" instead
+    of "Upstream Authors" and "Copyright").
+
+ -- Hubert Chan <hubert@uhoreg.ca>  Mon, 13 Mar 2006 20:32:28 -0700
+
+asymptote (0.95-1) unstable; urgency=low
+
+  * Sponsor note: upload to Debian by Yann Dirson <dirson@debian.org>.
+
+  * New upstream release.
+    * Store history file in home directory (closes: #334307).
+
+ -- Hubert Chan <hubert@uhoreg.ca>  Tue, 29 Nov 2005 14:11:29 -0500
+
+asymptote (0.92-1) unstable; urgency=low
+
+  * New upstream release.
+  * Call gv using --nowatch instead of -nowatch in interactive mode.
+    (closes: #334310)
+  * Suggests: gv. (closes: #334308) (Only suggests, because gv is only
+    needed for interactive mode, and may be replaced by another PS viewer.)
+  * Suggests: xpdf, in order to view help in interactive mode.
+  * Add upstream change to use convert instead of dvipng. (closes: #334226)
+  * Fix a typo in the documentation.
+
+ -- Hubert Chan <hubert@uhoreg.ca>  Tue,  8 Nov 2005 20:59:40 -0500
+
+asymptote (0.91-2) unstable; urgency=low
+
+  * Sponsor note: initial upload to Debian by Yann Dirson
+    <dirson@debian.org> (closes: 284030).
+
+  * Fix doc-base to refer to correct path to PDF documentation.
+  * Remove prerm script -- it only contains install-doc snippet, which is
+    automatically generated by dh_installdocs.
+  * Edit documentation to reflect paths actually used by this package.
+
+ -- Hubert Chan <hubert@uhoreg.ca>  Fri,  7 Oct 2005 23:10:23 -0400
+
+asymptote (0.91-1) unstable; urgency=low
+
+  * New upstream version.
+  * As suggested by Yann Dirson:
+    * Don't modify configure.ac.  Use CXXFLAGS=-I/usr/include/gc instead.
+    * Don't run texhash in Makefile, since we do that in postinst.
+    * Build against libreadline5 instead of libreadline4.
+    * Don't compress the PDF documentation.
+    * Let dh_installdocs handle doc-base installation.
+  * List doc target as "phony" in Makefile.in, to ensure that
+    documentation is built.
+  * Add doc to debian/rules build targets, since it's not built by default
+    any more.
+  * Bump standards-version to 3.6.2.
+  * Add dvipng to Build-depends, for building the documentation.
+
+ -- Hubert Chan <hubert@uhoreg.ca>  Thu,  6 Oct 2005 15:35:15 -0400
+
+asymptote (0.86-1) unstable; urgency=low
+
+  * New upstream version.
+  * Add upstream home page to package description.
+  * Add tetex-extra to Depends and Build-depends (for pstricks.sty).
+  * Add tetex-bin alternative to latex and dvips virtual package dependencies.
+  * Add gs-gpl | gs to Depends and Build-depends.
+  * Don't rebuild configure script in Makefile.
+
+ -- Hubert Chan <hubert@uhoreg.ca>  Tue, 30 Aug 2005 13:44:25 -0600
+
+asymptote (0.82-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Hubert Chan <hubert@uhoreg.ca>  Tue,  5 Jul 2005 09:54:24 -0400
+
+asymptote (0.80-1) unstable; urgency=low
+
+  * New upstream version.
+  * Don't run texhash in postrm upgrade -- it's already run in postinst.
+  * Register documentation with doc-base.
+
+ -- Hubert Chan <hubert@uhoreg.ca>  Tue, 21 Jun 2005 00:41:10 -0400
+
+asymptote (0.78-1) unstable; urgency=low
+
+  * New upstream release.
+  * Add build-depends on libgc-dev, and add --enable-gc=system configure flag.
+  * Asymptote doesn't seem to depend on the Boost libraries any more.
+
+ -- Hubert Chan <hubert@uhoreg.ca>  Mon, 23 May 2005 18:31:31 -0400
+
+asymptote (0.75-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Hubert Chan <hubert@uhoreg.ca>  Fri, 29 Apr 2005 15:55:44 -0400
+
+asymptote (0.74-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Hubert Chan <hubert@uhoreg.ca>  Thu, 14 Apr 2005 10:58:34 -0400
+
+asymptote (0.65-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Hubert Chan <hubert@uhoreg.ca>  Mon, 21 Feb 2005 22:49:33 -0500
+
+asymptote (0.63-1) unstable; urgency=low
+
+  * New upstream release.
+  * Install emacs mode file in the proper location, and add a startup file
+    to /etc/emacs/site-start.d, so that emacs users get asy-mode automatically.
+  * Install the documentation in PDF format rather than PostScript.
+
+ -- Hubert Chan <hubert@uhoreg.ca>  Sat, 19 Feb 2005 19:05:04 -0500
+
+asymptote (0.55-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Hubert Chan <hubert@uhoreg.ca>  Fri, 17 Dec 2004 23:19:12 -0500
+
+asymptote (0.54-1) unstable; urgency=low
+
+  * New upstream release.
+  * Remove my versions of the man pages.  (Merged into upstream.)
+  * Edit texinfo doc to point to the Debian copy of the GPL.
+  * Install html documentation.
+
+ -- Hubert Chan <hubert@uhoreg.ca>  Sun,  5 Dec 2004 23:31:22 -0500
+
+asymptote (0.53-1) unstable; urgency=low
+
+  * Initial Debian package. (closes: 284030)
+
+ -- Hubert Chan <hubert@uhoreg.ca>  Wed,  1 Dec 2004 16:37:32 -0500
